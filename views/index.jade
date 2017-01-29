@@ -1,0 +1,108 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(name='description', content='')
+		meta(name='author', content='')
+		meta(name="keywords" content="Silan He, Resume")
+		title i missed a bus
+		// Bootstrap Core CSS
+		link(href='stylesheets/bootstrap.min.css', rel='stylesheet')
+		// Custom CSS
+		link(href='stylesheets/scrolling-nav.css', rel='stylesheet')
+		// HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+		// WARNING: Respond.js doesn't work if you view the page via file://
+		//if lt IE 9
+			script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+			script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+	// The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function
+	body#page-top(data-spy='scroll', data-target='.navbar-fixed-top')
+		// Navigation
+		nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+			.container
+				.navbar-header.page-scroll
+					button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+						span.sr-only toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.navbar-brand.page-scroll(href='#page-top') i missed a bus
+				// Collect the nav links, forms, and other content for toggling
+				.collapse.navbar-collapse.navbar-ex1-collapse
+					ul.nav.navbar-nav
+						//Hidden li included to remove active class from about link when scrolled up past about section
+						li.hidden
+							a.page-scroll(href='#page-top')
+						li
+							a.page-scroll(href='#posts') posts
+						li
+							a.page-scroll(href='#about') about
+				// /.navbar-collapse
+			// /.container
+		// Intro Section
+		section#intro.intro-section
+				.container
+					br
+					h1 i missed a bus
+					h6 a place for sad people who miss buses
+					hr
+					button.btn-lg.btn-default i just missed a bus
+		// Posts Section
+		section#posts.posts-section
+				.container
+					.row
+						.col-lg-12
+							h5 posts
+							hr
+						.col-md-4
+
+		// About Section
+		section#about.success.about-section
+				.container
+					.row
+						.col-lg-12.text-center
+							h2 about
+							hr
+					.row
+						.col-lg-6
+							img(src="/images/missed.jpeg")
+								
+						.col-lg-6
+							p
+								| i missed a bus is a platform for sad people who missed a bus to find solace in their failure within the failure of others. all city-goers understand the pain.
+							p
+								| feel free to to document your missed bus by pressing the button above. let us unite under the feeling of barely missing a bus.
+		// Footer
+		footer.text-center
+			.footer-above
+				.container
+					.row
+						.footer-col.col-md-4
+							h3 location
+							p
+								| montreal,
+								br
+								| earth
+						.footer-col.col-md-4
+							img(src="/images/stm-logo.png")
+						.footer-col.col-md-4
+							h3 about i missed a bus
+							p
+								| i missed a bus is a montreal lifestyle 
+								| web app created Li Zhang, Silan He and Michel Ma
+			.footer-below
+				.container
+					.row
+						.col-lg-12
+							| Copyright © imissedabus.tech 2016
+
+
+		// jQuery
+		script(src='javascripts/jquery.js')
+		// Bootstrap Core JavaScript
+		script(src='javascripts/bootstrap.min.js')
+		// Scrolling Nav JavaScript
+		script(src='javascripts/jquery.easing.min.js')
+		script(src='javascripts/scrolling-nav.js')

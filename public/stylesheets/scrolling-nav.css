@@ -1,0 +1,120 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/** Basic styling */
+body {
+    font-size: 20px;
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b { margin-bottom: 20px; }
+h1,h4 { font-weight: 700; margin-bottom: 10px;}
+h2,h5 { font-weight: 450; color: #00BFFF; }
+h1 { font-size: 100px; }
+h2 { font-size: 54px; text-align: center;}
+h3 { font-size: 28px;color:#fbfbff;}
+h1,h6 {color:#fbfbff;}
+h5 {font-size: 54px; color:#fbfbff;}
+h6 {font-size: 30px;}
+
+/** Links */
+a { color: #39a0ed; text-decoration: none; }
+a:visited { color: #4c6085; }
+a:hover { color: #4c6085; text-decoration: underline; }
+
+ul.no-bullets { list-style-type: none; margin: 0px; padding-top:5px; }
+ul.no-bullets .italics {color:#A9A9A9; font-style:italic;}
+ul.no-bullets li { text-align:left; padding: 2px; padding-left:5px;}
+
+p.lead { text-align: center; color: #727878; }
+p.lead a { color: #FFFFFF; text-decoration: underline; }
+p.lead a:hover { text-decoration: none; }
+p.center {text-align: center; font-weight: 100; font-size:22px;}
+p.experience-period {color:#808080;}
+ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
+hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity=20); }
+
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:10px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .4s ease-in-out,padding .4s ease-in-out;
+        -moz-transition: background .4s ease-in-out,padding .4s ease-in-out;
+        transition: background .4s ease-in-out,padding .4s ease-in-out;
+        background-color:#00BFFF;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+footer h3 {
+  margin-bottom: 30px;
+}
+footer .footer-above {
+  padding-top: 50px;
+  background-color: #2C3E50;
+  color:#fbfbff;
+}
+footer .footer-col {
+  margin-bottom: 50px;
+}
+footer .footer-below {
+  padding: 25px 0;
+  background-color: #233140;
+  color:#00BFFF;
+}
+
+
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.intro-section {
+    padding-left:3%;
+    padding-right:3%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: 100%;
+    text-align: center;
+    background-color: #22A39F;
+    background-image: url("/images/bus.jpg");
+    background-size: cover;       /* For flexibility */
+    background-attachment: fixed;
+    -webkit-filter: opacity(80%);
+}
+
+.posts-section {
+    padding-left:3%;
+    padding-right:3%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: 100%;
+    text-align: center;
+    background-color:#00BFFF;
+
+}
+
+.about-section {
+    padding-left:3%;
+    padding-right:3%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: 100%;
+    text-align: center;
+    background-color:#eee;
+
+}
+
