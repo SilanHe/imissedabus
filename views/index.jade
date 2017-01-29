@@ -39,6 +39,10 @@ html(lang='en')
 							a.page-scroll(href='#posts') posts
 						li
 							a.page-scroll(href='#about') about
+						li
+							button.logon.btn-lg(onclick="document.getElementById('id01').style.display='block'") Login
+						li
+							button.logon.btn-lg(onclick="document.getElementById('id02').style.display='block'") Register
 				// /.navbar-collapse
 			// /.container
 		// Intro Section
@@ -49,6 +53,7 @@ html(lang='en')
 					h6 a place for sad people who miss buses
 					hr
 					button.btn-lg.btn-default i just missed a bus
+					hr
 		// Posts Section
 		section#posts.posts-section
 				.container
@@ -96,8 +101,59 @@ html(lang='en')
 				.container
 					.row
 						.col-lg-12
-							| Copyright © imissedabus.tech 2016
-
+							| copyright © imissedabus.tech 2016
+		// Button to open the modal login form
+		// The Modal
+		#id01.modal
+			span.close(onclick="document.getElementById('id01').style.display='none'", title='Close Modal') ×
+			// Modal Content
+			form.modal-content.animate(action='action_page.php')
+				.imgcontainer(position="relative")
+					.row
+						input(type='text', placeholder='Enter Username', name='uname', required='')
+					.row
+						input(type='password', placeholder='Enter Password', name='psw', required='')
+					.row
+						button.login(type='submit') Login
+					.row
+						input(type='checkbox', checked='checked')
+						|  Remember me
+					.row
+						button.cancelbtn(type='button', onclick="document.getElementById('id01').style.display='none'") Cancel
+						span.psw
+							| Forgot 
+							a(href='#') password?
+		#id02.modal
+			span.close(onclick="document.getElementById('id01').style.display='none'", title='Close Modal') ×
+			// Modal Content
+			form.modal-content.animate(action='action_page.php')
+				.imgcontainer(position="relative")
+					.row
+						input(type='text', placeholder='Enter Username', name='uname', required='')
+					.row
+						input(type='password', placeholder='Enter Password', name='psw', required='')
+					.row
+						button.login(type='submit') Register
+					.row
+						button.cancelbtn(type='button', onclick="document.getElementById('id02').style.display='none'") Cancel
+		script.
+			// Get the modal
+			var modal = document.getElementById('id01');
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			if (event.target == modal) {
+			modal.style.display = "none";
+			}
+			}
+		script.
+			// Get the modal
+			var modal = document.getElementById('id02');
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			if (event.target == modal) {
+			modal.style.display = "none";
+			}
+			}
 
 		// jQuery
 		script(src='javascripts/jquery.js')
