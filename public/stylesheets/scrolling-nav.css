@@ -105,6 +105,9 @@ button.login {
     width: 60%;
 }
 
+button.same {
+}
+
 /* Extra styles for the cancel button */
 .cancelbtn {
     width: auto;
@@ -200,10 +203,13 @@ span.psw {
        width: 100%;
     }
 }
+#posts ul {list-style: none;}
 
-ul.post span{
-    
-}
+#posts ul li {border: medium solid black; border-radius: 3px; line-height: 2; margin:5px; background-color:#eee;}
+#posts ul li p > strong { display: block;padding-top: 8px; margin-bottom: 10px; }
+#posts ul li .details { font-weight: 450; color: #00BFFF; }
+#posts ul li .details { display: block; margin-top: 5px; }
+#posts ul li .details .seperator {}
 
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
